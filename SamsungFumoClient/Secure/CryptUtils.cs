@@ -122,7 +122,8 @@ namespace SamsungFumoClient.Secure
             byte[] bytes = Encoding.UTF8.GetBytes(str2 + devPwdKey + str);
             try
             {
-                char[] hex = AdpEncodeHex(await CryptoProvider.Instance.Md5ComputeHashAsync(bytes));
+                
+                char[] hex = AdpEncodeHex(MD5.HashData(bytes));
                 var length = str.Length;
                 bytes[0] = Encoding.UTF8.GetBytes(str)[length - 2];
                 bytes[1] = Encoding.UTF8.GetBytes(str)[length - 1];
