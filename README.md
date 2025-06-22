@@ -9,8 +9,6 @@ To work around this issue, you can override the OpenSSL configuration using the 
 OPENSSL_CONF=openssl.custom ./DemoClient
 ```
 
-```csharp
-
 Check the `DemoClient` project for detailed information on how to use this OMA-DM client to scrape Samsung firmware binaries.
 
 ## Web application
