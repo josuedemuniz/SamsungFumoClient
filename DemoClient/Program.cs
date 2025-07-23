@@ -16,8 +16,9 @@ namespace DemoClient
         {
             var device = new Device
             {
-                Model = "SM-R510",
-                CustomerCode = "KOO",
+                Model = "SM-A156M",
+                CustomerCode = "ZTO",
+                FirmwareVersion = "A156MUBS6CYF2/A156MOWO6CYF3/A156MUBS6CYF2",
                 DeviceId = "IMEI:350505560006797",
                 SerialNumber = "R3CX80V0QZJ",
             };
